@@ -18,7 +18,7 @@
 | Rules + model | 100% | 96.7% (1 error) | 0% |
 | Rules + model + review when confidence < 0.7 | 90% | **100%** (0 errors) | 10% |
 
-On the synthetic test set (same formats as training, 12,607 transactions), every variant scores 100%. That's why I don't trust in-distribution numbers here: the unseen-format test is the one that matters. I wrote the rules and the held-out narrations myself, so the 96.7% and 100% figures are optimistic. The 90% model-only figure is the cleanest one.
+On the synthetic test set (same formats as training, 12,231 transactions), every variant scores 100%. That's why I don't trust in-distribution numbers here: the unseen-format test is the one that matters. I wrote the rules and the held-out narrations myself, so the 96.7% and 100% figures are optimistic. The 90% model-only figure is the cleanest one.
 
 **Underwriting check (40 synthetic businesses, 17 with injected stress: fewer receipts, more bounces):** flags caught 12 of 17 stressed businesses (70.6% recall) with 0 false flags on healthy ones. Stress is injected by a known rule in the generator, so this is a sanity check of the plumbing, not a credit-model claim.
 
