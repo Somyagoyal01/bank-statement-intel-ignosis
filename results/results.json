@@ -1,0 +1,66 @@
+{
+  "test_transactions": 12231,
+  "categorisation_synthetic_test": {
+    "model_only": {
+      "auto_categorised_share": 1.0,
+      "auto_accuracy": 1.0,
+      "review_queue_share": 0.0,
+      "errors_auto": 0
+    },
+    "rules_plus_model": {
+      "auto_categorised_share": 1.0,
+      "auto_accuracy": 1.0,
+      "review_queue_share": 0.0,
+      "errors_auto": 0
+    },
+    "rules_model_review(conf<0.7)": {
+      "auto_categorised_share": 1.0,
+      "auto_accuracy": 1.0,
+      "review_queue_share": 0.0,
+      "errors_auto": 0
+    }
+  },
+  "categorisation_heldout_formats": {
+    "model_only": {
+      "auto_categorised_share": 1.0,
+      "auto_accuracy": 0.9,
+      "review_queue_share": 0.0,
+      "errors_auto": 3
+    },
+    "rules_plus_model": {
+      "auto_categorised_share": 1.0,
+      "auto_accuracy": 0.9667,
+      "review_queue_share": 0.0,
+      "errors_auto": 1
+    },
+    "rules_model_review(conf<0.7)": {
+      "auto_categorised_share": 0.9,
+      "auto_accuracy": 1.0,
+      "review_queue_share": 0.1,
+      "errors_auto": 0
+    }
+  },
+  "underwriting_check": {
+    "businesses": 40,
+    "stressed_businesses": 17,
+    "flag_recall_on_stressed": 0.706,
+    "flag_rate_on_healthy": 0.0,
+    "risk_score_auc": 1.0
+  },
+  "example_business": {
+    "business_id": "B000",
+    "true_stress": 1.0,
+    "avg_monthly_business_inflow": 453078.0,
+    "inflow_cv": 0.214,
+    "inflow_trend_per_month": 47895.0,
+    "avg_monthly_emi": 64195.0,
+    "emi_to_inflow": 0.142,
+    "bounces": 20,
+    "bounces_per_month": 3.33,
+    "cash_deposit_share_of_credits": 0.18,
+    "uncategorised_rows": 0,
+    "flags": [
+      "20 bounce/return entries (3.33/month)"
+    ]
+  }
+}
